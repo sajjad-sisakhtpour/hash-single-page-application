@@ -1,6 +1,4 @@
-document.querySelectorAll("A").forEach((Element) => {
-  Element.style.color = "black";
-});
+document.querySelectorAll("A").forEach((Element) => {});
 window.addEventListener("hashchange", (e) => {
   let data;
   switch (location.hash) {
@@ -28,7 +26,7 @@ function render(data) {
   document.querySelector("h1").innerText = data.title;
   document.querySelectorAll("a").forEach((Element) => {
     if (Element.href.includes(data.href)) {
-      Element.style.color = "red";
+      Element.style.color = data.color;
     } else {
       Element.style.color = "black";
     }

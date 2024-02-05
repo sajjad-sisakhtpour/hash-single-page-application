@@ -1,4 +1,3 @@
-document.querySelectorAll("A").forEach((Element) => {});
 window.addEventListener("hashchange", (e) => {
   let data;
   switch (location.hash) {
